@@ -1,0 +1,97 @@
+<div class="w-full transition-animation bg-gray-100 scroll-mt-16" id="contact">
+  <div class="section-wrapper">
+    <div class="section-subject-container">
+      <span class="section-subject">{{ 'contact.contact' | translate }}</span>
+    </div>
+
+    <span class="section-title">
+      {{ 'contact.title' | translate }}
+    </span>
+
+    <div class="rounded-xl mx-auto max-w-6xl flex w-full flex-col md:flex-row">
+      <div class="my-8 p-6 flex flex-col rounded-l-2xl max-md:rounded-2xl backdrop-filter backdrop-blur-xl
+                  transition-animation bg-gray-300/40 text-base md:w-1/2 gap-4 md:gap-8">
+        <div class="h-full flex flex-col gap-4">
+          <div class="flex flex-col gap-4 md:gap-8">
+            <span class="sub-title">
+              {{ 'contact.title1' | translate }}
+            </span>
+            <div *ngFor="let item of contactItems"
+                 class="w-full text-base leading-8 flex items-center">
+              <mat-icon [svgIcon]="item.icon" class="transition-animation bg-gray-400/40 !size-12 p-3 rounded-md"/>
+              <a [href]="item.href" class="text-base mx-3" target="_blank">{{ item.name | translate }}</a>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 md:gap-8 transition-animation border-t-2 pt-4">
+            <div class="w-full text-base leading-8 flex items-center">
+              <mat-icon [svgIcon]="'email'" class="transition-animation bg-gray-400/40 !size-12 p-3 rounded-md"/>
+              <a [href]="'mailto:yazan.manaldeen@gmx.de'" class="text-base mx-3" target="_blank">yazan.manaldeen&#64;gmx.de</a>
+            </div>
+            <div class="w-full text-base leading-8 flex items-center">
+              <mat-icon [svgIcon]="'location'" class="transition-animation bg-gray-400/40 !size-12 p-3 rounded-md"/>
+              <span class="normal-text mx-3">{{ 'location' | translate }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-8 p-6 flex flex-col rounded-r-2xl max-md:rounded-2xl backdrop-filter backdrop-blur-xl
+                  transition-animation bg-gray-300/40 text-base md:w-1/2 gap-4 md:gap-8">
+        <span class="sub-title">
+            {{ 'contact.title2' | translate }}
+        </span>
+        <div
+          class="w-full text-base leading-8 flex items-center">
+          <form (ngSubmit)="formGroup.valid && send(formGroup.value)" [formGroup]="formGroup">
+            <mat-form-field class="w-full">
+              <mat-label>{{ topic.label }}</mat-label>
+              <mat-select [placeholder]="topic.placeholder" formControlName="topic">
+                <mat-option *ngFor="let topic of topic.topics" [value]="topic">{{ topic }}</mat-option>
+              </mat-select>
+              <mat-error *ngIf="formGroup.get('topic')?.hasError('required')">
+                {{ topic.required }}
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="w-full">
+              <mat-label>{{ name.label }}</mat-label>
+              <input [placeholder]="name.placeholder" formControlName="name" matInput>
+              <mat-error *ngIf="formGroup.get('name')?.hasError('required')">
+                {{ name.required }}
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="w-full">
+              <mat-label>{{ email.label }}</mat-label>
+              <input [placeholder]="email.placeholder" formControlName="email" matInput>
+              <mat-error *ngIf="formGroup.get('email')?.hasError('required')">
+                {{ email.required }}
+              </mat-error>
+              <mat-error *ngIf="formGroup.get('email')?.hasError('email')">
+                {{ email.email }}
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="w-full">
+              <mat-label>{{ subject.label }}</mat-label>
+              <input [placeholder]="subject.placeholder" formControlName="subject" matInput>
+              <mat-error *ngIf="formGroup.get('subject')?.hasError('required')">
+                {{ subject.email }}
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="w-full">
+              <mat-label>{{ message.label }}</mat-label>
+              <textarea [placeholder]="message.placeholder" class="!resize-none" formControlName="message" matInput
+                        rows="5"></textarea>
+              <mat-error *ngIf="formGroup.get('message')?.hasError('required')">
+                {{ message.required }}
+              </mat-error>
+            </mat-form-field>
+            <button class="w-full main-button" type="submit">{{ 'contact.send' | translate }}
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

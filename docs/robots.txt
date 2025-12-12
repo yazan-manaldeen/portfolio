@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yazan-manaldeen.github.io/portfolio/sitemap.xml
