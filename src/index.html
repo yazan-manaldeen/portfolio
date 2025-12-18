@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <!-- PRIMARY META -->
+  <title>Yazan Man Aldeen – Senior Frontend Developer</title>
+  <meta content="Yazan Man Aldeen – Senior Frontend Developer" name="title"/>
+  <meta
+    content="Frontend Developer specializing in Angular, TypeScript & responsive web apps. Explore my portfolio projects and experience. Based in Berlin."
+    name="description"/>
+  <meta content="Yazan Man Aldeen" name="author"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+  <!-- CANONICAL (will be used on the root) -->
+  <link href="https://yazan-manaldeen.github.io/portfolio/" rel="canonical"/>
+  <link href="https://yazan-manaldeen.github.io/portfolio/en" hreflang="en" rel="alternate"/>
+  <link href="https://yazan-manaldeen.github.io/portfolio/de" hreflang="de" rel="alternate"/>
+  <link href="https://yazan-manaldeen.github.io/portfolio/en" hreflang="x-default" rel="alternate"/>
+
+  <!-- Open Graph -->
+  <meta content="website" property="og:type"/>
+  <meta content="https://yazan-manaldeen.github.io/portfolio/" property="og:url"/>
+  <meta content="Yazan Man Aldeen – Senior Frontend Developer" property="og:title"/>
+  <meta
+    content="Frontend Developer specializing in Angular with 3.5+ years experience. Based in Berlin. Available for work and collaborations."
+    property="og:description"/>
+  <meta content="https://yazan-manaldeen.github.io/portfolio/assets/images/og-preview.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="image/jpeg" property="og:image:type">
+
+  <!-- Twitter -->
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@yazan_016" name="twitter:site"/>
+  <meta content="Yazan Man Aldeen – Senior Frontend Developer" name="twitter:title"/>
+  <meta content="Frontend Developer specialized in Angular & TypeScript. Based in Berlin. Explore my projects."
+        name="twitter:description"/>
+  <meta content="https://yazan-manaldeen.github.io/portfolio/assets/images/og-preview.jpg" name="twitter:image"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <!-- Base href for GitHub Pages -->
+  <base href="/portfolio/"/>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yazan Man Aldeen",
+      "email": "mailto:yazan.manaldee@gmx.de",
+      "url": "https://yazan-manaldeen.github.io/portfolio/",
+      "image": "https://yazan-manaldeen.github.io/portfolio/assets/images/og-preview.jpg",
+      "jobTitle": "Senior Frontend Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance / Personal Portfolio"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/yazan-manaldeen",
+        "https://github.com/yazan-manaldeen",
+        "https://twitter.com/yazan_016"
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Yazan Man Aldeen Portfolio",
+      "url": "https://yazan-manaldeen.github.io/portfolio/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://yazan-manaldeen.github.io/portfolio/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+
+
+  <!-- App font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+  <!-- Splash screen styles -->
+  <link href="assets/styles/splash-screen.css" rel="stylesheet">
+</head>
+<body class="mat-typography">
+<script>
+  let theme = localStorage.getItem("theme") || 'auto';
+  let themeClass = theme;
+  if (theme === 'auto') {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      themeClass = 'dark';
+    } else {
+      themeClass = 'light';
+    }
+  }
+  document.body.classList.remove('light');
+  document.body.classList.remove('dark');
+  document.body.classList.add(themeClass);
+  localStorage.setItem('theme', theme);
+</script>
+<div class="splash-screen">
+  <h1 class="Y">Y</h1>
+  <h1 class="A1">A</h1>
+  <h1 class="Z">Z</h1>
+  <h1 class="A2">A</h1>
+  <h1 class="N">N</h1>
+</div>
+<app-root></app-root>
+</body>
+</html>

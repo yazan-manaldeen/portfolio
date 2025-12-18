@@ -1,0 +1,63 @@
+<div class="w-full scroll-mt-16" id="projects">
+  <div class="section-wrapper">
+    <div class="section-subject-container">
+      <span class="section-subject">{{ 'projects.projects' | translate }}</span>
+    </div>
+
+    <span class="section-title">
+      {{ 'projects.title' | translate }}
+    </span>
+
+    <div *ngFor="let project of projects; let idx = index"
+         class="flex w-full max-w-4xl flex-col justify-between gap-4 md:flex-row md:gap-8 mx-auto p-6 text-base
+                rounded-2xl backdrop-filter backdrop-blur-xl transition-animation bg-gray-300/40 shadow-md">
+
+      <div class="max-md:order-1 md:w-1/6">
+        <div [class]="{
+                  'dark:bg-gray-900': (idx % 2 === 0),
+                  'dark:bg-gray': (idx % 2 !== 0),
+                  'bg-gray-900': (idx % 2 !== 0),
+                  'bg-gray': (idx % 2 === 0),
+               }"
+             class="inline-block rounded-xl p-2">
+          <img *ngIf="!project.url" [alt]="project.logo"
+               [src]="'assets/images/projects/' + project.logo"
+               class="max-w-[80px]">
+          <a *ngIf="project.url" [href]="project.url" target="_blank">
+            <img [alt]="project.logo"
+                 [src]="'assets/images/projects/' + project.logo"
+                 class="max-w-[80px] transition-transform duration-500 md:hover:scale-105">
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 max-md:order-2 md:w-5/6">
+        <span class="sub-title">
+          {{ project.name }} {{ (project.shortname) ? '(' + project.shortname + ')' : '' }}
+        </span>
+        <span *ngIf="project.stakeholder" class="normal-text font-bold">
+          Stakeholder: {{ project.stakeholder }}
+        </span>
+        <span class="normal-text">
+          {{ project.description }}
+        </span>
+        <span *ngIf="project.addedDescription" class="normal-text font-semibold">
+          {{ project.addedDescription }}
+        </span>
+
+        <div *ngIf="project.contributes" class="flex flex-wrap gap-2">
+          <div *ngFor="let contribute of project.contributes"
+               class="flex items-center justify-center section-subject">
+            <p class="small-text font-medium">{{ contribute }}</p>
+          </div>
+        </div>
+
+        <a *ngIf="project.url" [href]="project.url" [matTooltip]="project.name"
+           class="size-12 relative flex justify-center items-center hover:bg-gray-100/50 active:bg-gray-200/50 rounded-full p-1.5"
+           target="_blank">
+          <mat-icon [svgIcon]="'open'"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
