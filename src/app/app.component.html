@@ -1,0 +1,21 @@
+<div class="flex flex-col !transition-animation !bg-gray w-full h-[100dvh]">
+  <mat-drawer-container class="!transition-animation !bg-gray">
+    <mat-drawer #appDrawer class="md:!hidden !transition-animation !bg-gray !text-gray-900">
+      <sidebar (onSectionChange)="appDrawer.close(); goTo($event)" [appDrawer]="appDrawer"/>
+    </mat-drawer>
+    <mat-drawer-content class="transition-animation bg-gray text-gray-900">
+      <toolbar (onSectionChange)="goTo($event)" [appDrawer]="appDrawer"/>
+      <ng-container class="overflow-scroll">
+        <hero/>
+        <about/>
+        <skills/>
+        <experiences/>
+        <projects/>
+        <contact-me/>
+        <footer class="p-4 text-center text-sm">
+          © 2025 Yazan Man Aldeen. All rights reserved. Designed & Developed 👨‍💻
+        </footer>
+      </ng-container>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

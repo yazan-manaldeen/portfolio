@@ -1,0 +1,83 @@
+.image-layer-1 {
+  @apply absolute inset-0 rounded-xl opacity-30 blur-md
+  bg-[linear-gradient(65deg,#E40035_0%,#F60A48_25%,#F20755_35%,#DC087D_50%,#9717E7_75%,#6C00F5_100%)];
+}
+
+.image-layer-2 {
+  @apply absolute inset-0 rounded-xl opacity-30 blur-lg
+  bg-[linear-gradient(138deg,#FF31D9_0%,#FF5BE100_100%)];
+}
+
+.glass-bg {
+  @apply absolute inset-0 rounded-xl bg-gray-500/10 backdrop-blur-xl border border-gray-500/20 shadow-2xl;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.loader-wrapper {
+  @apply absolute inset-0 flex items-center justify-center bg-transparent;
+}
+
+.orbit-loader {
+  @apply relative w-10 h-10;
+}
+
+.orbit-ring {
+  @apply absolute top-1/2 left-1/2 border-2 border-transparent rounded-full border-t-gray-900;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes orbit-spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.orbit-loader span:nth-child(1) {
+  @apply w-9 h-9 animate-[orbit-spin_1.2s_linear_infinite];
+}
+
+.orbit-loader span:nth-child(2) {
+  @apply w-7 h-7 opacity-75 animate-[orbit-spin_0.9s_linear_infinite];
+}
+
+.orbit-loader span:nth-child(3) {
+  @apply w-5 h-5 opacity-50 animate-[orbit-spin_0.6s_linear_infinite];
+}
+
+@keyframes hide-animation {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.loader-hide {
+  animation: hide-animation 300ms ease forwards;
+}
+
+@keyframes show-animation {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.image-show {
+  animation: show-animation 300ms ease forwards;
+}
+
+.error-show {
+  animation: show-animation 300ms ease forwards;
+}
+
+.loader-show {
+  animation: show-animation 300ms ease forwards;
+}

@@ -1,0 +1,34 @@
+<div class="w-full transition-animation bg-gray-100 scroll-mt-16" id="about">
+  <div class="section-wrapper">
+
+    <div class="section-subject-container">
+      <span class="section-subject">{{ 'about.aboutMe' | translate }}</span>
+    </div>
+
+    <div class="flex justify-between flex-col md:flex-row gap-6 md:gap-12">
+      <div class="relative mx-auto h-[360px] w-[270px] min-h-[360px] min-w-[270px] md:h-[400px] md:w-[300px]
+                  md:min-h-[400px] md:min-w-[300px] lg:h-[500px] lg:w-[375px] lg:min-h-[500px] lg:min-w-[375px]">
+        <image [imgSrc]="'assets/images/about-image.webp'"/>
+      </div>
+
+      <div class="flex max-w-2xl flex-grow flex-col gap-2">
+        <p class="about-section-title">{{ 'about.title' | translate }}</p>
+        <p class="text-justify normal-text">
+          {{ 'about.p.0' | translate }}
+        </p>
+        <p class="text-justify normal-text">
+          {{ 'about.p.1' | translate }}
+        </p>
+        <p class="text-justify normal-text">
+          {{ 'about.p.2' | translate }}
+        </p>
+        <p class="text-justify normal-text">
+          {{ 'about.p.3' | translate }}
+        </p>
+        <p class="text-justify normal-text">
+          {{ 'about.p.4' | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

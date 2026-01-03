@@ -1,0 +1,21 @@
+<div class="w-full">
+  <div class="section-wrapper">
+    <div class="section-subject-container">
+      <span class="section-subject">{{ 'skills.skills' | translate }}</span>
+    </div>
+
+    <span class="section-title">
+      {{ 'skills.title' | translate }}
+    </span>
+
+    <div class="grid grid-cols-3 gap-y-4 md:grid-cols-6 md:gap-y-8 lg:grid-cols-8 lg:gap-y-12">
+      <div *ngFor="let skill of skills"
+           class="flex flex-col items-center text-center gap-2">
+        <a [href]="skill.url" target="_blank">
+          <mat-icon [svgIcon]="skill.logo" class="!size-16 transition-transform duration-300 md:hover:scale-110"/>
+        </a>
+        <span class="normal-text italic">{{ skill.label }}</span>
+      </div>
+    </div>
+  </div>
+</div>

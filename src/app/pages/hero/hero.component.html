@@ -1,0 +1,49 @@
+<div class="w-full">
+  <div class="section-wrapper md:flex-row">
+    <div class="relative mx-auto min-h-[300px] min-w-[270px] h-[300px] w-[270px] md:min-h-[375px] md:min-w-[320px]
+                md:h-[375px] md:w-[320px]">
+      <image [imgSrc]="'assets/images/hero-image.webp'"/>
+    </div>
+    <div class="flex max-w-2xl flex-grow flex-col gap-2 md:order-first">
+      <h1 class="main-title">
+        {{ 'hero.hi' | translate }}
+      </h1>
+      <h2 class="second-title">
+        {{ 'hero.title' | translate }}
+      </h2>
+      <h3 class="third-title">
+        {{ 'hero.specialization' | translate }}
+      </h3>
+      <div class="my-8 p-6 text-justify rounded-2xl backdrop-filter backdrop-blur-xl transition-animation bg-gray-300/40">
+        <p class="normal-text !leading-8">{{ 'hero.description.0' | translate }}</p>
+        <p class="normal-text !leading-8">{{ 'hero.description.1' | translate }}</p>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <div class="flex gap-2">
+          <mat-icon [svgIcon]="'location'"/>
+          <p class="normal-text">{{ 'location' | translate }}</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="flex h-6 w-6 items-center justify-center">
+          <span class="relative flex h-3 w-3">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex h-3 w-3 rounded-full bg-emerald-500"></span>
+          </span>
+          </div>
+          <p class="normal-text">{{ 'hero.available' | translate }}</p>
+        </div>
+      </div>
+
+      <!--      <div class="flex gap-1">-->
+      <!--        <a *ngFor="let item of contactItems"-->
+      <!--           [href]="item.href"-->
+      <!--           [matTooltip]="item.name"-->
+      <!--           class="size-12 relative flex justify-center items-center hover:bg-gray-100/50 active:bg-gray-200/50 rounded-full p-1.5"-->
+      <!--           target="_blank">-->
+      <!--          <mat-icon [svgIcon]="item.icon"/>-->
+      <!--        </a>-->
+      <!--      </div>-->
+    </div>
+  </div>
+</div>

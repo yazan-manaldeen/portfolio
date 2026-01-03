@@ -1,0 +1,49 @@
+<div class="w-full transition-animation bg-gray-100 scroll-mt-16" id="experience">
+  <div class="section-wrapper">
+
+    <div class="section-subject-container">
+      <span class="section-subject">{{ 'experience.experience' | translate }}</span>
+    </div>
+
+    <span class="section-title">
+      {{ 'experience.title' | translate }}
+    </span>
+
+    <div *ngFor="let experience of experiences"
+         class="flex w-full max-w-4xl flex-col justify-between gap-4 md:flex-row md:gap-8 mx-auto p-6 text-base
+                rounded-2xl backdrop-filter backdrop-blur-xl transition-animation bg-gray-300/40 shadow-md">
+
+      <div class="max-md:order-1 md:w-1/6">
+        <a [href]="experience.url" target="_blank">
+          <img [alt]="experience.company"
+               [src]="'assets/images/' + experience.logo"
+               class="max-w-[120px] rounded-xl transition-transform duration-500 md:hover:scale-105">
+        </a>
+      </div>
+
+      <div class="flex flex-col gap-4 max-md:order-3 md:w-4/6">
+        <span class="sub-title">
+          {{ experience.position }}
+        </span>
+        <ul class="flex list-disc flex-col gap-2 md:gap-1">
+          <li *ngFor="let item of experience.description" class="normal-text">
+            {{ item }}
+          </li>
+        </ul>
+
+        <a *ngIf="experience.url" [href]="experience.url" [matTooltip]="experience.company"
+           class="size-12 relative flex justify-center items-center hover:bg-gray-100/50 active:bg-gray-200/50 rounded-full p-1.5"
+           target="_blank">
+          <mat-icon [svgIcon]="'open'"/>
+        </a>
+      </div>
+
+      <div class="max-md:order-2 md:w-1/6">
+        <span class="small-text text-gray-700 md:float-right">
+          {{ experience.startDate }} - {{ experience.endDate }}
+        </span>
+      </div>
+
+    </div>
+  </div>
+</div>

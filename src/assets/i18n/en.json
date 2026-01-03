@@ -1,0 +1,224 @@
+{
+  "switchTheme": "Switch Theme",
+  "switchLang": "Switch Lang",
+  "downloadCV": "Download CV",
+  "location": "Berlin, Germany",
+  "imgFailed": "⚠\uFE0F Failed to load photo",
+  "hero": {
+    "hi": "Hi, I’m Yazan\uD83D\uDC4B",
+    "title": "Frontend Developer",
+    "specialization": "Software & Information Systems Engineer",
+    "description": [
+      "Angular-focused Frontend Developer with 3.5+ years of experience. I build clean, scalable, and high-performance web applications with reusable components and strong architecture.",
+      "I’ve also led a frontend team and enjoy solving complex technical challenges with reliable, maintainable solutions."
+    ],
+    "available": "Available for work or projects"
+  },
+  "about": {
+    "about": "About",
+    "aboutMe": "About Me",
+    "title": "Curious about me? Here you have it:",
+    "p": [
+      "I'm a Frontend Developer who loves building fast, scalable, and thoughtfully crafted web applications. I specialize in Angular and enjoy turning complex requirements into clean architecture, smooth interactions, and interfaces that simply feel great to use.",
+      "Over the past 3.5+ years, I've worked on dashboards, enterprise platforms, and large E-government systems where performance, maintainability, and reliability were essential. I’ve also led a frontend team—guiding developers, reviewing code, and shaping consistent architectures that scale.",
+      "Driven by curiosity, I always look deeper: how things work, why they work, and how they can work better. I believe great engineering is a blend of logic, creativity, and continuous refinement. I enjoy exploring modern tools, best practices, and design patterns that elevate both code quality and user experience.",
+      "When I’m not writing code, you'll probably find me learning something new, improving my workflow, or spending time with the people who matter most. I'm always open to challenges, conversations, and opportunities that help build meaningful products.",
+      "One last thing — I’m always open to new projects, conversations, and collaborations. Feel free to reach out anytime. I don't bite, I promise 😉"
+    ]
+  },
+  "skills": {
+    "skills": "Skills",
+    "title": "Technologies, Tools & Skills I Excel At:"
+  },
+  "experience": {
+    "experience": "Experience",
+    "title": "Here is a quick summary of my most recent experiences:",
+    "experiences": [
+      {
+        "logo": "sss-logo.png",
+        "title": "Software developer",
+        "url": "https://smartsoft-co.com/",
+        "position": "Frontend Web Development Team Leader",
+        "company": "Smart Software Solutions",
+        "description": [
+          "Led a 12-person frontend team.",
+          "Developed full-featured frontend apps.",
+          "Reviewed code and organized architecture.",
+          "Delivered projects for ministries and companies.",
+          "Collaborated with client teams and trained users.",
+          "Introduced reusable components and Angular upgrades."
+        ],
+        "startDate": "Oct 2020",
+        "endDate": "Apr 2024"
+      }
+    ]
+  },
+  "projects": {
+    "projects": "Projects",
+    "title": "Some of the noteworthy projects I worked on and contributed to building:",
+    "projectsList": [
+      {
+        "name": "Organizo",
+        "logo": "organizo.png",
+        "url": "https://organizo.uk/",
+        "description": "Built from scratch as a zero-code platform to digitalize enterprise processes, integrating CMS, Document Management, Case Management, DSS, and more, targeting the UK market.",
+        "contributes": [
+          "Led frontend team & task distribution",
+          "Frontend development with Angular 17",
+          "Designed scalable architecture adopted across company projects",
+          "Implemented best practices & code review",
+          "Created reusable components",
+          "Improved performance & user experience"
+        ]
+      },
+      {
+        "name": "Correspondence Management System",
+        "shortname": "CMS",
+        "logo": "cms.png",
+        "stakeholder": "Qatari Ministry of Culture",
+        "description": "Scalable solution on IBM FileNet for managing incoming, outgoing, and internal memos with workflows and streamlined document tracking.",
+        "contributes": [
+          "Frontend development",
+          "Code review",
+          "Improved performance",
+          "Created reusable components"
+        ]
+      },
+      {
+        "name": "Ministry of Interior - Archiving System",
+        "shortname": "MOI",
+        "logo": "moi.png",
+        "stakeholder": "Qatari Ministry of Interior",
+        "description": "Dynamic archiving system on IBM FileNet for creating custom forms, applying rules, attaching documents, and indexing files efficiently.",
+        "contributes": [
+          "Frontend development",
+          "Refactoring & improving code quality",
+          "Improved performance",
+          "Enhanced user experience"
+        ]
+      },
+      {
+        "name": "Al-Noor Case Management",
+        "shortname": "Al-Noor",
+        "logo": "al-noor.png",
+        "stakeholder": "Al-Noor Care Center in Qatar",
+        "description": "Case management system for Al-Noor Care Center to automate student registration, track cases, and manage school and rehabilitation data efficiently.",
+        "contributes": [
+          "Frontend development",
+          "Code review",
+          "Improved performance",
+          "Led frontend team"
+        ]
+      },
+      {
+        "name": "Q-Chem File Management",
+        "shortname": "Q-Chem",
+        "logo": "q-chem.png",
+        "stakeholder": "Qatar Chemical Company",
+        "description": "FileNet-based solution for Q-Chem to structure electronic files, design workflows, and manage records efficiently with streamlined processes.",
+        "contributes": [
+          "Refactoring & improving code quality",
+          "Increased maintainability",
+          "Improved performance",
+          "Enhanced user experience"
+        ]
+      },
+      {
+        "name": "Decision Support System",
+        "shortname": "DSS",
+        "logo": "dss.png",
+        "stakeholder": "Qatari Ministry of Culture",
+        "description": "Internal improvement platform rebuilt entirely as a graduation project in collaboration with Smart Software Solutions.",
+        "addedDescription": "Rebuilt entirely as a graduation project in collaboration with Smart Software Solutions.",
+        "contributes": [
+          "Frontend development",
+          "Refactoring & improving code quality",
+          "Created reusable components"
+        ]
+      },
+      {
+        "name": "Tender",
+        "shortname": "Tender",
+        "logo": "tender.png",
+        "stakeholder": "Qatari Ministry of Culture",
+        "description": "Meeting management solution on IBM FileNet for organizing agendas, recording decisions, and tracking activities efficiently.",
+        "contributes": [
+          "Frontend development"
+        ]
+      },
+      {
+        "name": "Loyality",
+        "shortname": "Loyality",
+        "logo": "loyality.png",
+        "stakeholder": "Syria International Islamic Bank",
+        "description": "Loyalty system for Syria International Islamic Bank to manage customer rewards and provide partners with a dashboard to track vouchers.",
+        "contributes": [
+          "Frontend development",
+          "Created reusable components"
+        ]
+      },
+      {
+        "name": "Reserva",
+        "shortname": "Reserva",
+        "logo": "reserva.png",
+        "stakeholder": "Online Application",
+        "description": "Online restaurant reservation app allowing users to book tables on specific dates and review all their reservations efficiently.",
+        "contributes": [
+          "Frontend development",
+          "Created reusable components"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "contact": "Contact",
+    "contactMe": "Contact Me",
+    "title": "Feel free to reach out. I'd love to hear from you!",
+    "title1": "Follow my journey in Web Development",
+    "title2": "Send Me a Message",
+    "form": {
+      "topic": {
+        "label": "Topic",
+        "placeholder": "Message topic",
+        "required": "Topic is Required!",
+        "topics": [
+          "Job Inquiry",
+          "Project Collaboration",
+          "Feedback",
+          "General Question"
+        ]
+      },
+      "name": {
+        "label": "Name",
+        "placeholder": "Your Name",
+        "required": "Name is Required!"
+      },
+      "email": {
+        "label": "E-Mail",
+        "placeholder": "Your E-Mail",
+        "required": "E-Mail is Required!",
+        "email": "E-Mail is invalid!"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Subject",
+        "required": "Subject is Required!"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Message",
+        "required": "Message is Required!"
+      }
+    },
+    "send": "Send"
+  },
+  "snackBar": {
+    "messageSentSuccessfully": "Thank you! Your message has been received. I’ll get back to you soon.",
+    "messageSentFailed": "Sorry, your message couldn't be sent. Please try again.",
+    "connectionError": "Unable to send your message. Please check your internet connection and try again.",
+    "changeLangFailed": "Failed after multiple attempts. Reverting to default.",
+    "downloadCVFailed": "Failed to download the CV.",
+    "close": "Close",
+    "retry": "Retry"
+  }
+}

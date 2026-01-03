@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Root page (redirects to /en but remains canonical) -->
+  <url>
+    <loc>https://yazan-manaldeen.dev/</loc>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yazan-manaldeen.dev/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yazan-manaldeen.dev/de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yazan-manaldeen.dev/"/>
+  </url>
+
+  <!-- English page -->
+  <url>
+    <loc>https://yazan-manaldeen.dev/en</loc>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yazan-manaldeen.dev/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yazan-manaldeen.dev/de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yazan-manaldeen.dev/"/>
+  </url>
+
+  <!-- German page -->
+  <url>
+    <loc>https://yazan-manaldeen.dev/de</loc>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yazan-manaldeen.dev/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yazan-manaldeen.dev/de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yazan-manaldeen.dev/"/>
+  </url>
+</urlset>

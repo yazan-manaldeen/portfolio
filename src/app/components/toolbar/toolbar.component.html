@@ -1,0 +1,72 @@
+<div
+  class="sticky flex top-0 z-50 w-full !h-[64px] !p-0 !transition-animation !bg-gray/50 !text-gray-900 backdrop-blur-xl">
+  <div class="w-full h-[64px] px-4 flex justify-start gap-3 items-center md:!hidden">
+    <button (click)="appDrawer.open()" class="icon-button">
+      <mat-icon [svgIcon]="'menu'"/>
+    </button>
+    <img alt="logo.svg" class="!w-24" src="assets/icons/app/logo.svg"/>
+  </div>
+
+  <div class="w-full gap-4 h-full px-4 flex justify-between text-center items-center max-md:hidden">
+    <img alt="logo.svg" class="!w-24" src="assets/icons/app/logo.svg"/>
+    <div class="flex">
+      <div class="flex justify-between gap-6 text-center items-center">
+        <span (click)="goTo(item.fragment)"
+              *ngFor="let item of navItems"
+              class="nav-item text-base cursor-pointer">
+          {{ item.title | translate }}
+        </span>
+      </div>
+      <div class="h-6 m-auto mx-3 ml-6 w-0.5 rounded-full transition-animation bg-gray-200"></div>
+      <div class="flex justify-between gap-2 text-center items-center">
+
+        <button [matMenuTriggerFor]="themeMenu" [matTooltip]="'Theme'" class="icon-button">
+          <mat-icon [svgIcon]="'theme'"/>
+        </button>
+
+        <mat-menu #themeMenu="matMenu" [overlapTrigger]="false">
+          <button (click)="toggleTheme('auto')" [class.active]="(theme$ | async) === 'auto'" class="icon-button">
+            <mat-icon [svgIcon]="'auto'"/>
+          </button>
+          <button (click)="toggleTheme('light')" [class.active]="(theme$ | async) === 'light'"
+                  class="icon-button">
+            <mat-icon [svgIcon]="'sun'"/>
+          </button>
+          <button (click)="toggleTheme('dark')" [class.active]="(theme$ | async) === 'dark'" class="icon-button">
+            <mat-icon [svgIcon]="'moon'"/>
+          </button>
+        </mat-menu>
+
+        <button (click)="switchLang('en')"
+                *ngIf="(lang$ | async) === 'de'"
+                [matTooltip]="'English'"
+                class="icon-button">
+          <img alt="en.svg" class="rounded-full size-6" src="assets/icons/app/en.svg"/>
+        </button>
+        <button (click)="switchLang('de')"
+                *ngIf="(lang$ | async) === 'en'"
+                [matTooltip]="'Deutsch'"
+                class="icon-button">
+          <img alt="de.svg" class="rounded-full size-6" src="assets/icons/app/de.svg"/>
+        </button>
+
+        <!--        <button (click)="downloadCV()" class="main-button">{{ 'downloadCV' | translate }}</button>-->
+        <button
+          (click)="downloadCV()"
+          [class.!h-2]="(progress$ | async) >= 0 && (progress$ | async) < 100"
+          [class.!py-0]="(progress$ | async) >= 0 && (progress$ | async) < 100"
+          [disabled]="(progress$ | async) >= 0 && (progress$ | async) < 100"
+          class="main-button relative overflow-hidden">
+          <span [class.opacity-0]="(progress$ | async) >= 0 && (progress$ | async) < 100"
+                class="z-10 relative">
+            {{ 'downloadCV' | translate }}
+          </span>
+          <div *ngIf="(progress$ | async) >= 0 && (progress$ | async) < 100"
+               [style.width.%]="(progress$ | async)"
+               class="absolute rounded-xl inset-0 bg-gray-900 transition-all duration-200">
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

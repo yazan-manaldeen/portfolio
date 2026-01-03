@@ -1,0 +1,56 @@
+<div class="w-full h-[64px] px-4 flex justify-between items-center">
+  <button (click)="appDrawer.close()" class="icon-button">
+    <mat-icon [svgIcon]="'close'"/>
+  </button>
+  <img alt="App Logo" class="!w-24" src="assets/icons/app/logo.svg"/>
+</div>
+<div class="flex flex-col font-medium py-2 transition-animation border-t-2">
+  <span *ngFor="let item of navItems" class="mx-4 my-2">
+    <span (click)="goTo(item.fragment)" class="nav-item text-base cursor-pointer">
+      {{ item.title | translate }}
+    </span>
+  </span>
+</div>
+<div class="flex flex-col font-medium py-2 transition-animation border-t-2">
+  <div class="mx-4 my-2 flex justify-between items-center">
+    <span class="normal-text">{{ 'switchTheme' | translate }}</span>
+    <div class="ml-6">
+      <button (click)="toggleTheme('auto')" [class.active]="(theme$ | async) === 'auto'" class="icon-button">
+        <mat-icon [svgIcon]="'auto'"/>
+      </button>
+      <button (click)="toggleTheme('light')" [class.active]="(theme$ | async) === 'light'" class="icon-button">
+        <mat-icon [svgIcon]="'sun'"/>
+      </button>
+      <button (click)="toggleTheme('dark')" [class.active]="(theme$ | async) === 'dark'" class="icon-button">
+        <mat-icon [svgIcon]="'moon'"/>
+      </button>
+    </div>
+  </div>
+  <div class="mx-4 my-2 flex justify-between items-center">
+    <span class="normal-text">{{ 'switchLang' | translate }}</span>
+    <div class="ml-6">
+      <button (click)="switchLang('en')" [class.active]="(lang$ | async) === 'en'" class="icon-button">
+        <img alt="en.svg" class="rounded-full size-6" src="assets/icons/app/en.svg"/>
+      </button>
+      <button (click)="switchLang('de')" [class.active]="(lang$ | async) === 'de'" class="icon-button">
+        <img alt="de.svg" class="rounded-full size-6" src="assets/icons/app/de.svg"/>
+      </button>
+    </div>
+  </div>
+  <!--  <button (click)="downloadCV()" class="main-button mx-4 my-2">{{ 'downloadCV' | translate }}</button>-->
+  <button
+    (click)="downloadCV()"
+    [class.!h-2]="(progress$ | async) >= 0 && (progress$ | async) < 100"
+    [class.!py-0]="(progress$ | async) >= 0 && (progress$ | async) < 100"
+    [disabled]="(progress$ | async) >= 0 && (progress$ | async) < 100"
+    class="main-button mx-4 my-2 relative overflow-hidden">
+          <span [class.opacity-0]="(progress$ | async) >= 0 && (progress$ | async) < 100"
+                class="z-10 relative">
+            {{ 'downloadCV' | translate }}
+          </span>
+    <div *ngIf="(progress$ | async) >= 0 && (progress$ | async) < 100"
+         [style.width.%]="(progress$ | async)"
+         class="absolute rounded-xl inset-0 bg-gray-900 transition-all duration-200">
+    </div>
+  </button>
+</div>

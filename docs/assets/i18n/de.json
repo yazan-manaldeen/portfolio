@@ -1,0 +1,224 @@
+{
+  "switchTheme": "Theme wechseln",
+  "switchLang": "Sprache wechseln",
+  "downloadCV": "Lebenslauf",
+  "location": "Berlin, Deutschland",
+  "imgFailed": "⚠\uFE0F Foto konnte nicht geladen werden",
+  "hero": {
+    "hi": "Hi, Ich bin Yazan\uD83D\uDC4B",
+    "title": "Frontend Entwickler",
+    "specialization": "Ingenieur für Software- und Informationssysteme",
+    "description": [
+      "Angular-fokussierter Frontend-Entwickler mit über 3,5 Jahren Erfahrung. Ich entwickle saubere, skalierbare und leistungsstarke Webanwendungen mit wiederverwendbaren Komponenten und solider Architektur.",
+      "Außerdem habe ich ein Frontend-Team geleitet und arbeite gerne an komplexen technischen Herausforderungen, um zuverlässige und wartbare Lösungen zu schaffen."
+    ],
+    "available": "Verfügbar für Arbeit oder Projekte"
+  },
+  "about": {
+    "about": "Über mich",
+    "aboutMe": "Über mich",
+    "title": "Neugierig auf mich? Hier ist ein Überblick:",
+    "p": [
+      "Ich bin ein Frontend-Entwickler, der es liebt, schnelle, skalierbare und durchdacht aufgebaute Webanwendungen zu entwickeln. Ich spezialisiere mich auf Angular und genieße es, komplexe Anforderungen in eine saubere Architektur, reibungslose Interaktionen und Oberflächen zu verwandeln, die sich einfach richtig gut anfühlen.",
+      "In den letzten 3,5+ Jahren habe ich an Dashboards, Enterprise-Plattformen und großen E-Government-Systemen gearbeitet, bei denen Leistung, Wartbarkeit und Zuverlässigkeit entscheidend waren. Außerdem habe ich ein Frontend-Team geleitet – Entwickler begleitet, Code überprüft und konsistente, skalierbare Architekturen gestaltet.",
+      "Aus Neugier schaue ich immer tiefer: wie Dinge funktionieren, warum sie so funktionieren und wie sie besser funktionieren können. Ich glaube, dass großartige Softwareentwicklung eine Mischung aus Logik, Kreativität und kontinuierlicher Verbesserung ist. Moderne Tools, Best Practices und Design Patterns zu erkunden, gehört für mich zum Alltag.",
+      "Wenn ich mal nicht am Code schreibe, lerne ich gerne Neues, optimiere meinen Workflow oder verbringe Zeit mit den Menschen, die mir wichtig sind. Ich bin immer offen für neue Herausforderungen, Gespräche und Möglichkeiten, um bedeutungsvolle Produkte zu entwickeln.",
+      "Und noch etwas – ich freue mich immer über neue Projekte, Gespräche und Kooperationen. Melde dich jederzeit gern. Keine Sorge… ich beiße nicht 😉"
+    ]
+  },
+  "skills": {
+    "skills": "Fähigkeiten",
+    "title": "Technologien, Werkzeuge & Fähigkeiten, in denen ich hervorragend bin"
+  },
+  "experience": {
+    "experience": "Erfahrung",
+    "title": "Hier ist eine kurze Zusammenfassung meiner neuesten Erfahrungen:",
+    "experiences": [
+      {
+        "logo": "sss-logo.png",
+        "title": "Softwareentwickler",
+        "url": "https://smartsoft-co.com/",
+        "position": "Teamleiter für Frontend- Webentwicklung",
+        "company": "Smart Software Solutions",
+        "description": [
+          "Leitung eines 12-köpfigen Frontend-Teams.",
+          "Entwicklung kompletter Frontend-Anwendungen.",
+          "Code-Reviews und Architektur organisiert.",
+          "Umsetzung von Projekten für Ministerien und Unternehmen.",
+          "Zusammenarbeit mit Kundenteams und Schulung der Nutzer.",
+          "Einführung wiederverwendbarer Komponenten und Angular-Upgrades."
+        ],
+        "startDate": "Okt 2020",
+        "endDate": "Apr 2024"
+      }
+    ]
+  },
+  "projects": {
+    "projects": "Projekte",
+    "title": "Einige der bemerkenswerten Projekte, an denen ich gearbeitet und zu deren Entwicklung ich beigetragen habe:",
+    "projectsList": [
+      {
+        "name": "Organizo",
+        "logo": "organizo.png",
+        "url": "https://organizo.uk/",
+        "description": "Von Grund auf als Zero-Code-Plattform entwickelt, um Unternehmensprozesse zu digitalisieren und CMS, Dokumentenmanagement, Fallverwaltung, DSS und mehr zu integrieren, mit Fokus auf den britischen Markt.",
+        "contributes": [
+          "Frontend-Team geleitet & Aufgabenverteilung",
+          "Frontend-Entwicklung mit Angular 17",
+          "Skalierbare Architektur entworfen, in weiteren Unternehmensprojekten übernommen",
+          "Best Practices implementiert & Code-Review",
+          "Wiederverwendbare Komponenten erstellt",
+          "Leistung & Benutzererfahrung verbessert"
+        ]
+      },
+      {
+        "name": "Correspondence Management System",
+        "shortname": "CMS",
+        "logo": "cms.png",
+        "stakeholder": "Katarisches Kulturministerium",
+        "description": "Skalierbare Lösung auf IBM FileNet zur Verwaltung eingehender, ausgehender und interner Memos mit Workflows und optimiertem Dokumenten-Tracking.",
+        "contributes": [
+          "Frontend-Entwicklung",
+          "Code-Review",
+          "Leistung verbessert",
+          "Wiederverwendbare Komponenten erstellt"
+        ]
+      },
+      {
+        "name": "Innenministerium – Archivierungssystem",
+        "shortname": "MOI",
+        "logo": "moi.png",
+        "stakeholder": "Katarisches Innenministerium",
+        "description": "Dynamisches Archivierungssystem auf IBM FileNet zur Erstellung individueller Formulare, Regeln, Dokumentanhänge und effizienter Indexierung.",
+        "contributes": [
+          "Frontend-Entwicklung",
+          "Refactoring & Codequalität verbessert",
+          "Leistung verbessert",
+          "Benutzererfahrung optimiert"
+        ]
+      },
+      {
+        "name": "Al-Noor Fallverwaltung",
+        "shortname": "Al-Noor",
+        "logo": "al-noor.png",
+        "stakeholder": "Al-Noor Care Center in Katar",
+        "description": "Fallverwaltungssystem für Al-Noor Care Center zur Automatisierung der Schülerregistrierung, Fallverfolgung und effizienten Verwaltung von Schul- und Rehabilitationsdaten.",
+        "contributes": [
+          "Frontend-Entwicklung",
+          "Code-Review",
+          "Leistung verbessert",
+          "Frontend-Team geleitet"
+        ]
+      },
+      {
+        "name": "Q-Chem Dateiverwaltung",
+        "shortname": "Q-Chem",
+        "logo": "q-chem.png",
+        "stakeholder": "Qatar Chemical Company",
+        "description": "Dateiverwaltungslösung auf FileNet für Q-Chem zur Strukturierung elektronischer Dateien, Gestaltung von Workflows und effizienter Verwaltung von Records.",
+        "contributes": [
+          "Refactoring & Codequalität verbessert",
+          "Wartbarkeit erhöht",
+          "Leistung verbessert",
+          "Benutzererfahrung optimiert"
+        ]
+      },
+      {
+        "name": "Decision Support System",
+        "shortname": "DSS",
+        "logo": "dss.png",
+        "stakeholder": "Katarisches Kulturministerium",
+        "description": "Interne Verbesserungsplattform, vollständig als Abschlussprojekt in Zusammenarbeit mit Smart Software Solutions neu aufgebaut.",
+        "addedDescription": "Vollständig als Abschlussprojekt in Zusammenarbeit mit Smart Software Solutions neu aufgebaut.",
+        "contributes": [
+          "Frontend-Entwicklung",
+          "Refactoring & Codequalität verbessert",
+          "Wiederverwendbare Komponenten erstellt"
+        ]
+      },
+      {
+        "name": "Tender",
+        "shortname": "Tender",
+        "logo": "tender.png",
+        "stakeholder": "Katarisches Kulturministerium",
+        "description": "Meeting-Management-Lösung auf IBM FileNet zur Organisation von Agenden, Protokollierung von Entscheidungen und effizienten Nachverfolgung von Aktivitäten.",
+        "contributes": [
+          "Frontend-Entwicklung"
+        ]
+      },
+      {
+        "name": "Loyality",
+        "shortname": "Loyality",
+        "logo": "loyality.png",
+        "stakeholder": "Syria International Islamic Bank",
+        "description": "Treueprogramm für die Syria International Islamic Bank zur Verwaltung von Kundenprämien und Bereitstellung eines Dashboards für Partner zur Nachverfolgung von Gutscheinen.",
+        "contributes": [
+          "Frontend-Entwicklung",
+          "Wiederverwendbare Komponenten erstellt"
+        ]
+      },
+      {
+        "name": "Reserva",
+        "shortname": "Reserva",
+        "logo": "reserva.png",
+        "stakeholder": "Online-Anwendung",
+        "description": "Online-Reservierung-App für Restaurants, mit der Benutzer Tische an bestimmten Terminen buchen und ihre Reservierungen verwalten können.",
+        "contributes": [
+          "Frontend-Entwicklung",
+          "Wiederverwendbare Komponenten erstellt"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "contact": "Kontakt",
+    "contactMe": "Kontakt aufnehmen",
+    "title": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich auf Ihre Nachricht!",
+    "title1": "Folgen Sie meinem Weg in der Webentwicklung",
+    "title2": "Schreiben Sie mir eine Nachricht",
+    "form": {
+      "topic": {
+        "label": "Thema",
+        "placeholder": "Nachrichtenthema",
+        "required": "Ein Thema ist erforderlich!",
+        "topics": [
+          "Jobanfrage",
+          "Projektzusammenarbeit",
+          "Feedback",
+          "Allgemeine Frage"
+        ]
+      },
+      "name": {
+        "label": "Name",
+        "placeholder": "Ihr Name",
+        "required": "Ein Name ist erforderlich!"
+      },
+      "email": {
+        "label": "E-Mail",
+        "placeholder": "Ihre E-Mail",
+        "required": "Eine E-Mail ist erforderlich!",
+        "email": "Die E-Mail-Adresse ist ungültig!"
+      },
+      "subject": {
+        "label": "Betreff",
+        "placeholder": "Betreff",
+        "required": "Ein Betreff ist erforderlich!"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Ihre Nachricht",
+        "required": "Eine Nachricht ist erforderlich!"
+      }
+    },
+    "send": "Senden"
+  },
+  "snackBar": {
+    "messageSentSuccessfully": "Danke! Ihre Nachricht wurde erhalten. Ich melde mich bald bei Ihnen.",
+    "messageSentFailed": "Entschuldigung, Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+    "connectionError": "Die Nachricht konnte nicht gesendet werden. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.",
+    "changeLangFailed": "Nach mehreren Versuchen fehlgeschlagen. Standard wird wiederhergestellt.",
+    "downloadCVFailed": "Lebenslauf konnte nicht heruntergeladen werden.",
+    "close": "Schließen",
+    "retry": "Erneut versuchen"
+  }
+}

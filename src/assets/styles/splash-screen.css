@@ -1,0 +1,108 @@
+.light {
+  --bg-color: #F0F3F5;
+  --color: #030712;
+}
+
+.dark {
+  --bg-color: #030712;
+  --color: #F0F3F5;
+}
+
+.splash-screen {
+  height: 100vh;
+  width: 100vw;
+  background: var(--bg-color);
+  color: var(--color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-screen > span {
+  display: inline-block;
+  font-size: 32px;
+  margin: 0 10px;
+  opacity: 0;
+  transition: transform 0.5s ease-in-out;
+  animation: char-animation 2.5s infinite;
+}
+
+.splash-screen > span.Y {
+  transform: translateX(50vw) translateY(50vh);
+  animation-delay: calc(0.1s * 5);
+}
+
+.splash-screen > span.A1 {
+  transform: translateX(-50vw) translateY(50vh);
+  animation-delay: calc(0.1s * 4);
+}
+
+.splash-screen > span.Z {
+  transform: unset;
+  animation-delay: calc(0.1s * 3);
+}
+
+.splash-screen > span.A2 {
+  transform: translateX(50vw) translateY(-50vh);
+  animation-delay: calc(0.1s * 2);
+}
+
+.splash-screen > span.N {
+  transform: translateX(-50vw) translateY(-50vh);
+  animation-delay: calc(0.1s * 1);
+}
+
+@keyframes char-animation {
+  0% {
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 0.1;
+  }
+
+  25% {
+    opacity: 0.6;
+  }
+
+  37% {
+    transform: unset;
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: unset;
+    opacity: 1;
+  }
+
+  62% {
+    transform: unset;
+    opacity: 0.8;
+  }
+
+  75% {
+    transform: unset;
+    opacity: 0.6;
+  }
+
+  87% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.splash-screen-hidden {
+  .splash-screen {
+    display: none;
+  }
+}

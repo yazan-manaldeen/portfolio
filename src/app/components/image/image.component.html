@@ -1,0 +1,22 @@
+<div class="glass-bg loader-show"></div>
+<div *ngIf="isLoading" [class.loader-hide]="!isLoading" class="loader-wrapper">
+  <div class="orbit-loader loader-show">
+    <span class="orbit-ring"></span>
+    <span class="orbit-ring"></span>
+    <span class="orbit-ring"></span>
+  </div>
+</div>
+<div [class.hidden]="isLoading || isError" [class.image-show]="!isLoading"
+     class="w-full h-full">
+  <div *ngIf="coloredBG" class="image-layer-1"></div>
+  <div *ngIf="coloredBG" class="image-layer-2"></div>
+  <img (error)="onImageError()"
+       (load)="onImageLoad()"
+       [src]="imgSrc"
+       alt="alt"
+       class="absolute h-full w-full inset-0 rounded-xl object-cover shadow-lg"/>
+</div>
+<div *ngIf="isError" [class.error-show]="isError"
+     class="normal-text absolute inset-0 flex items-center justify-center text-gray-900 text-center p-4 transition-animation bg-gray/30 rounded-xl">
+  {{ 'imgFailed' | translate }}
+</div>
